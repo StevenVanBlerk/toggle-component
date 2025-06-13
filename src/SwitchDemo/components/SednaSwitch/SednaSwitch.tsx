@@ -10,7 +10,6 @@ const SednaSwitch = () => {
     <StaticAccentSwitch
       label="Custom colors and value labels"
       id="custom-value-labels-switch"
-      value={isSelected ? "GRID" : "DEFAULT"}
       isSelected={isSelected}
       onChange={() => {
         setIsSelected((prevState) => !prevState);

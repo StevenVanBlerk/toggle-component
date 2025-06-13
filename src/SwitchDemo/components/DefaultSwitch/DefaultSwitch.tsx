@@ -9,7 +9,6 @@ const DefaultSwitch = () => {
       label="Default"
       id="default-switch"
       isSelected={isSelected}
-      value={isSelected}
       onChange={() => {
         setIsSelected((prevState) => !prevState);
       }}

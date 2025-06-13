@@ -10,7 +10,6 @@ const DisabledCheckedSwitch = () => {
       isDisabled={true}
       id="disabled-checked-switch"
       isSelected={isSelected}
-      value={isSelected}
       onChange={() => {
         setIsSelected((prevState) => !prevState);
       }}

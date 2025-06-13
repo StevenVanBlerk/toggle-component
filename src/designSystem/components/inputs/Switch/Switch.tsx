@@ -5,8 +5,7 @@ type Size = "LG" | "MD" | "SM";
 type Anchor = "TOP" | "RIGHT" | "BOTTOM" | "LEFT";
 type Variant = "PRIMARY" | "SECONDARY" | "WARNING" | "ERROR";
 
-export type SwitchProps<T> = {
-  value: T;
+export type SwitchProps = {
   isSelected: boolean | null;
   label: string;
   id: string;
@@ -23,20 +22,17 @@ export type SwitchProps<T> = {
   className?: string;
 };
 
-const Switch = <T,>({
-  value,
+const Switch = ({
   isSelected,
   label,
   id,
   onChange,
   isLabelVisible = true,
-  labelAnchor = "LEFT",
-  isErrored = false,
   isDisabled = false,
   selectedLabel,
   deselectedLabel,
   className,
-}: SwitchProps<T>) => {
+}: SwitchProps) => {
   return (
     <StyledWrapper
       className={className}

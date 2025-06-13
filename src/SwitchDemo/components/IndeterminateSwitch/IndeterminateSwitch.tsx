@@ -9,7 +9,6 @@ const IndeterminateSwitch = () => {
       label="Initially indeterminate"
       id="indeterminate-switch"
       isSelected={isSelected}
-      value={isSelected}
       onChange={() => {
         setIsSelected((prevState) => !prevState);
       }}

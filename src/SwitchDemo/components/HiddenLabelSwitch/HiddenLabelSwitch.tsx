@@ -10,7 +10,6 @@ const HiddenLabelSwitch = () => {
       id="hidden-label-switch"
       isLabelVisible={false}
       isSelected={isSelected}
-      value={isSelected}
       onChange={() => {
         setIsSelected((prevState) => !prevState);
       }}
