@@ -5,6 +5,7 @@ import DefaultSwitch from "./components/DefaultSwitch";
 import DisabledSwitch from "./components/DisabledSwitch";
 import DisabledCheckedSwitch from "./components/DisabledCheckedSwitch";
 import HiddenLabelSwitch from "./components/HiddenLabelSwitch";
+import ValueLabelsSwitch from "./components/ValueLabelsSwitch";
 
 const SwitchDemo = () => {
   return (
@@ -25,6 +26,9 @@ const SwitchDemo = () => {
             </li>
             <li>
               <IndeterminateSwitch />
+            </li>
+            <li>
+              <ValueLabelsSwitch />
             </li>
             <li>
               <HiddenLabelSwitch />
