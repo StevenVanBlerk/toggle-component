@@ -1,24 +1,24 @@
-import type { ReactElement, ReactNode, SyntheticEvent } from "react";
+import type { ReactNode, SyntheticEvent } from "react";
 import { StyledWrapper } from "./styles";
 
-type Size = "LG" | "MD" | "SM";
-type Anchor = "TOP" | "RIGHT" | "BOTTOM" | "LEFT";
-type Variant = "PRIMARY" | "SECONDARY" | "WARNING" | "ERROR";
+/** DEV NOTES FOR REVIEWER
+ * Some further improvements that could be made to this component include:
+ * - Allowing mapping of values to the selected and deselected states, e.g. false = "DARK_MODE" and true = "LIGHT_MODE"
+ * - Allowing Switch to handle its own error state and styling via isErrored and errorMessage props
+ * - Allowing for anchoring the Switch label to the top, right, bottom, or left via a labelAnchor prop
+ * - Allowing for easy theme changes via a variant prop, e.g. "PRIMARY", "SECONDARY", "SUCCESS", "WARNING", "ERROR"
+ * - Allowing for easy size variations via a size prop, e.g. "LG", "MD", "SM"
+ */
 
 export type SwitchProps = {
   isSelected: boolean | null;
   label: string;
   id: string;
   selectedLabel?: ReactNode;
-  deselectedLabel?: ReactElement;
+  deselectedLabel?: ReactNode;
   onChange?: (event: SyntheticEvent) => void;
   isLabelVisible?: boolean;
-  labelAnchor?: Anchor;
-  isErrored?: boolean;
-  errorMessage?: string;
   isDisabled?: boolean;
-  variant?: Variant;
-  size?: Size;
   className?: string;
 };
 
