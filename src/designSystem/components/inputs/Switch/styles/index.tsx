@@ -36,6 +36,7 @@ export const StyledWrapper = styled.span<StyledWrapperProps>`
   .switch {
     display: flex;
     gap: 4px;
+    align-items: center;
   }
 
   .track {
@@ -70,12 +71,14 @@ export const StyledWrapper = styled.span<StyledWrapperProps>`
   /* Conditionally visually displaying label text */
   .label-text {
     display: ${({ $isLabelVisible }) => ($isLabelVisible ? "initial" : "none")};
+    white-space: nowrap;
   }
 
   /* Ensuring icons are vertically centered with the Switch */
   .value-label {
     display: flex;
     align-items: center;
+    white-space: nowrap;
   }
 
   /* Fading the switch if the input is disabled */
