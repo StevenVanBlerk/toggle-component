@@ -57,7 +57,9 @@ export const StyledWrapper = styled.span<StyledWrapperProps>`
     height: var(--thumb-size);
     background: var(--thumb-color);
     border-radius: 99px;
-    transition: margin 0.2s cubic-bezier(0.1, 1, 1, 1), box-shadow 0.1s ease;
+    transition:
+      margin 0.2s cubic-bezier(0.1, 1, 1, 1),
+      box-shadow 0.1s ease;
     box-shadow: var(--thumb-highlight-shadow-hidden);
     margin-left: ${({ $isIndeterminate }) =>
       $isIndeterminate /* Centering the thumb if the state is indeterminate */

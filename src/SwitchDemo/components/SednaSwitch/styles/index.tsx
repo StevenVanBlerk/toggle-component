@@ -9,7 +9,7 @@ export const StaticAccentSwitch = styled(Switch)`
   .icon {
     width: 8px;
     height: 8px;
-    transition: "0.2s ease";
+    transition: fill 0.2s ease;
   }
 
   .deselect-icon {

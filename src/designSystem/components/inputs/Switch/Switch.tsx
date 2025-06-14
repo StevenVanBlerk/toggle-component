@@ -50,6 +50,7 @@ const Switch = ({
           checked={isSelected || false}
           aria-checked={isSelected || false}
           disabled={isDisabled}
+          readOnly={!onChange}
         />
         <div className="switch">
           <div className="value-label">{deselectedLabel}</div>
