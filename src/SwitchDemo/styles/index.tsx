@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
-export const DemoWrapper = styled.div`
+export const DemoCardsWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 32px;
+
   section {
     background: var(--surface-background-color);
     padding: 8px;
